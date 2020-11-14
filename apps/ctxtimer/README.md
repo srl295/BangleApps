@@ -1,19 +1,29 @@
 # CtxTimer
 
-Based on Simple Timer
+Simple contraction timer
 
 ## Features
 
-- When the time is up the timer can be reset to starting time, this is useful e.g. for playing board games
-- When the countdown is running the timer cannot be adjusted, this prevents accidental time variations
-- When the time is up the starting time is shown, as a reminder of the time elapsed
-- When the time is up the timer can be reset with a gesture, no need to use any button
+very basic at this point
 
 ## How to use it
 
-- Tap on minutes to increase them one by one
-- Tap on seconds to increase them one by one
-- Press BTN3 to reset time to 0
-- Press BTN1 to start the timer or reset to the original time
-- Press BTN2 to return to the launcher (only while countdown is not running)
-- When the time is up use the [swipeleft](https://github.com/espruino/BangleApps/tree/master/apps/gesture) gesture to reset the timer
+- press BTN1 to start a contraction, or to restart one if started too early
+- press BTN2 to stop a contraction
+- press BTN3 to cancel a contraction if it was started too early.
+
+- hold down BTN3 to exit. No persistence, keeps the screen on.
+
+### Results
+
+- the time (24 hour clock)
+- `@:` this is the time you last pressed BTN1 (start of 'this' ctx)
+- `Dur` this is the duration of the most recent contraction
+- `P@` this is the time of the prior contraction
+- `PDur` this is the duration of the prior contraction
+- `Freq` this is the time between the prior contraction's end and the current contraction's starrt
+- `Quiet` this is the time between the most recent contraction's end, and now.
+
+## AUTHOR
+
+@srl295 Steven R. Loomis <https://srl295.github.io>

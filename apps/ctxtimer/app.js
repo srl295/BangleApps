@@ -114,7 +114,7 @@ function drawLabels() {
     g.drawString(`+  +`, 35, 180);
   g.setFontAlign(0, 0, 3);
   g.setFont("6x8", 1);
-  g.drawString("Reset                   (re)start", 230, 120);
+  g.drawString("Cancel                   Start", 230, 120);
   if (state != "started") // only when not runnung
     g.drawString("Back", 230, 120);
 }

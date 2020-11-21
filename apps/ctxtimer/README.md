@@ -21,7 +21,7 @@ very basic at this point
 - `Dur` this is the duration of the most recent contraction
 - `P@` this is the time of the prior contraction
 - `PDur` this is the duration of the prior contraction
-- `Freq` this is the time between the prior contraction's end and the current contraction's starrt
+- `Freq` this is the time between the prior contraction's start and the current contraction's start
 - `Quiet` this is the time between the most recent contraction's end, and now.
 
 ## AUTHOR

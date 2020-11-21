@@ -71,7 +71,7 @@ setInterval(() => {
     iv2s(start, end||n, 'Dur:'),
     walltime(lastStart, 'P@:'),
     iv2s(lastStart, lastEnd, 'PDur:'),
-    iv2s(lastEnd, start, 'Freq:'),
+    iv2s(lastStart, start, 'Freq:'),
     iv2s(end, n, 'Quiet:')
   ].join('\n');
     

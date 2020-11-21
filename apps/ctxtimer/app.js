@@ -42,10 +42,15 @@ setWatch(() => {
 // interval to string
 function iv2s(a, b, what) {
   if(!a || !b) return '';
-  const d = (b-a)/1000;
-  return (what||'') + (Number(d.toFixed(0)).toString()+'s');
+  let d = (b-a)/1000;
+  if(d > 60) {
+    const m = Math.floor(d/60);
+    d = d - (m*60);
+    return (what||'') + m+'m'+(Number(d.toFixed(0)).toString()+'s');
+  } else {
+    return (what||'') + (Number(d.toFixed(0)).toString()+'s');
+  }
 }
-
 
 function twodigit(a) {
   if(a>=10) return Number(a).toString();

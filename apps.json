@@ -1785,7 +1785,7 @@
     "id": "ctxtimer",
     "name": "CtxTimer",
     "icon": "app.png",
-    "version": "0.2",
+    "version": "0.3",
     "description": "Contrax timer",
     "tags": "timer",
     "readme": "README.md",
